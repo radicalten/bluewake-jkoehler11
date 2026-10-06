@@ -38,7 +38,7 @@ jobs:
             -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ \
             -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF \
             -DBLUEWAKE_LINUX_REGRESSION_TESTS=ON \
-            -DAURORA_DAWN_PROVIDER=package -DAURORA_SDL3_PROVIDER=vendor
+            -DAURORA_DAWN_PROVIDER=package -DAURORA_SDL3_PROVIDER=vendor -DSDL_X11_XTEST=OFF
           cmake --build build/linux-host --target bluewake bluewake_disc_extract \
             bluewake_fast_blocks_test bluewake_cycle_domain_test \
             bluewake_interrupt_sources_test bluewake_delivery_digest_test \
